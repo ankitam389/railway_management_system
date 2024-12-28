@@ -22,8 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-qty+a9u8hhdwk*nr-_pl5h9bm(a59u=*h_=jt1o*k6+7dx$=cu'
 
-ADMIN_API_KEY = '5d41402abc4b2a76b9719d911017c592'
-
+ADMIN_API_KEY = 'YOUR_API_KEY' #replace with your API key
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -82,8 +81,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'railway_db',
-        'USER': 'root',
-        'PASSWORD': 'Ankita#101',
+        'USER': 'your_user', #replace with your user name
+        'PASSWORD': 'your_password', #replace with your password
         'HOST': 'localhost',
         'PORT': '3306',
     }

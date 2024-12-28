@@ -7,7 +7,6 @@ class User(models.Model):
     is_admin = models.BooleanField(default=False)
 
     def save(self, *args, **kwargs):
-        # Hash password before saving, if not already hashed
         if not self.password.startswith('pbkdf2_sha256$'):
             self.password = make_password(self.password)
         super(User, self).save(*args, **kwargs)
