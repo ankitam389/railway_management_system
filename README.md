@@ -25,13 +25,13 @@ Apply migrations to set up the database schema:
 
 To run the application:
 -run the following command to start the Django server:
-    -python manage.py runserver
+      -python manage.py runserver
 This will run the application on http://127.0.0.1:8000/
 To access the app:
 append http://127.0.0.1:8000/ with:
 - api/ register/  --> for registering a user
 - api/ login/  --> for user login
-- api/ train/add/  --> to add new train details 
+- api/ train/add/  --> to add new train details
 - api/ availability/<str:source>/<str:destination>/  --> to get seat availability
 - api/ book/<int:train_id>/  --> to book a seat
 - api/ booking/<int:booking_id>/  --> to get specific booking details
